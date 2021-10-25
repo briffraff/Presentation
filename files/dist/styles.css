@@ -1,0 +1,42 @@
+.mannie {
+    margin: 0;
+    /* background-color: royalblue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mannie-title {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 40%;
+}
+
+.mannieImg {
+    padding: 0;
+    margin: 0;
+    width: 35%;
+    height: 100%;
+}
+
+.mannieImg2 {
+    padding: 0;
+    margin: 0;
+    width: 45%;
+    height: 100%;
+}
+
+.mannieImg3 {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.mannieImg4 {
+    padding: 0;
+    margin: 0;
+    width: 55%;
+    height: 100%;
+}
