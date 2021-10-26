@@ -13,30 +13,73 @@
     width: 40%;
 }
 
-.mannieImg {
+.mannieImg20 {
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.mannieImg25 {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+}
+
+.mannieImg30 {
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: 100%;
+}
+
+.mannieImg30 {
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    height: 100%;
+}
+
+.mannieImg35 {
     padding: 0;
     margin: 0;
     width: 35%;
     height: 100%;
 }
 
-.mannieImg2 {
+
+.mannieImg40 {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 100%;
+}
+
+.mannieImg45 {
     padding: 0;
     margin: 0;
     width: 45%;
     height: 100%;
 }
 
-.mannieImg3 {
+.mannieImg50 {
     padding: 0;
     margin: 0;
     width: 50%;
     height: 100%;
 }
 
-.mannieImg4 {
+.mannieImg55 {
     padding: 0;
     margin: 0;
     width: 55%;
+    height: 100%;
+}
+
+.mannieImg60 {
+    padding: 0;
+    margin: 0;
+    width: 60%;
     height: 100%;
 }
