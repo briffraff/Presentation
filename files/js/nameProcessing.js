@@ -28,9 +28,9 @@ let mSecond = [
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-7_Head_Low.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-9_Head_High.obj',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-9_Head_Low.OBJ',
-    // 'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-10_Head_High.OBJ',
+    'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-10_Head_High.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-10_Head_Low.OBJ',
-    // 'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-11_Head_High.OBJ',
+    'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-11_Head_High.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-11_Head_Low.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-12_Head_High.obj',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_BB-12_Head_Low.OBJ',
@@ -78,7 +78,7 @@ let mFour = [
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_MA-5_Head_Low.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_ML-1_Head_High.obj',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_ML-1_Head_Low.obj',
-    // 'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_ML-2_Head_High.obj',
+    'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_ML-2_Head_High.obj',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_ML-2_Head_Low.obj',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_ML-5_Head_High.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Mens\\Models_WIth_Heads\\SM_ML-5_Head_Low.OBJ',
@@ -203,8 +203,8 @@ let yaSecond = [
     'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-B1_Head_High.obj',
     'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-B1_Head_Low.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-Clo_Head_High.obj',
-    // 'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-Clo_Head_Low.obj',
-    // 'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-SCh_Head_High.obj',
+    'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-Clo_Head_Low.obj',
+    'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-SCh_Head_High.obj',
     'N:\\Avatars\\Mannequins Morphable\\Young Athletes\\Models_With_Heads\\SM_YAB-SCh_Head_Low.obj',
 ];
 
@@ -253,7 +253,7 @@ let wFour = [
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_WA-Relaxed_Head_Low.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_W-Relaxed_Head_High.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_W-Relaxed_Head_Low.OBJ',
-    // 'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_W-Relaxed2_Head_High.obj',
+    'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_W-Relaxed2_Head_High.obj',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_W-Relaxed2_Head_Low.obj',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_W-RO_Head_High.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Models_With_Heads\\SM_W-RO_Head_Low.OBJ',
@@ -325,7 +325,7 @@ let wSeven = [
 ];
 
 let wLegs = [
-    'N:\\Avatars\\Mannequins Morphable\\Womens\\Legforms\\SM_WP-1_LEG_High.obj',
+    'N:\\Avatars\\Mannequins Morphable\\Womens\\Legforms\\SM_WP-1_LEG_Higsh.obj',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Legforms\\SM_WP-1_LEG_Low.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Legforms\\SM_WP-R_LEG_High.OBJ',
     'N:\\Avatars\\Mannequins Morphable\\Womens\\Legforms\\SM_WP-R_LEG_Low.OBJ',
@@ -347,17 +347,17 @@ function nameProcessing(pathList) {
             let splitGeometry = splitPath[splitPath.length - 1];
             let pose = splitGeometry.split('_')[1];
 
-            return [pose, 'mannieImg30'];
+            return [pose, 'mannieImg60'];
         });
 
     return filterList;
 }
 
-let yaObject = {
-    'yaCol1': nameProcessing(yaFirst),
-    'yaCol2': nameProcessing(yaSecond),
-    'ya-legforms': nameProcessing(yaLegs),
-};
+// let yaObject = {
+//     'yaCol1': nameProcessing(yaFirst),
+//     'yaCol2': nameProcessing(yaSecond),
+//     'ya-legforms': nameProcessing(yaLegs),
+// };
 
 let menObject = {
     'menCol1': nameProcessing(mFirst),
@@ -372,17 +372,173 @@ let menObject = {
     'men-legforms': nameProcessing(mLegs),
 };
 
-let womenObject = {
-    'womenCol1': nameProcessing(wFirst),
-    'womenCol2': nameProcessing(wSecond),
-    'womenCol3': nameProcessing(wThree),
-    'womenCol4': nameProcessing(wFour),
-    'womenCol5': nameProcessing(wFive),
-    'womenCol6': nameProcessing(wSix),
-    'womenCol7': nameProcessing(wSeven),
-    'women-legforms': nameProcessing(wLegs),
-};
+// let womenObject = {
+//     'womenCol1': nameProcessing(wFirst),
+//     'womenCol2': nameProcessing(wSecond),
+//     'womenCol3': nameProcessing(wThree),
+//     'womenCol4': nameProcessing(wFour),
+//     'womenCol5': nameProcessing(wFive),
+//     'womenCol6': nameProcessing(wSix),
+//     'womenCol7': nameProcessing(wSeven),
+//     'women-legforms': nameProcessing(wLegs),
+// };
 
-console.log(womenObject);
+console.log(menObject);
 
 ////////////////////   IF OBJECT IS NOT CORRECT KEY REPLACE \ WITH \\
+
+// function renameFiles(sourcePath, destinationPath, namesArr, extension) {
+//     var fs = require('fs');
+
+//     namesArr.forEach((x) => {
+//         let source = sourcePath + x[0] + extension;
+//         let destination = destinationPath + x[1] + extension;
+
+//         fs.renameSync(source, destination);
+//     });
+// }
+
+// let path = 'C:\\Users\\riffraff\\Desktop\\presentation\\files\\img\\M\\';
+// let extension = '.png';
+
+// let names = [
+//     ['1_####.RGB_color.0000', 'FPS-YAB19'],
+//     ['1_####.RGB_color.0001', 'LPS-YAG15'],
+//     ['1_####.RGB_color.0002', 'YAB-12'],
+//     ['1_####.RGB_color.0003', 'YAG-G2'],
+//     ['1_####.RGB_color.0004', 'YAB-15'],
+//     ['1_####.RGB_color.0005', 'YAB-1'],
+//     ['1_####.RGB_color.0006', 'YAB-2'],
+//     ['1_####.RGB_color.0007', 'YAB-8'],
+//     ['1_####.RGB_color.0008', 'YAB-A-Pose'],
+//     ['1_####.RGB_color.0009', 'YAB-B1'],
+//     ['1_####.RGB_color.0010', 'YAB-Clo'],
+//     ['1_####.RGB_color.0011', 'YAB-SCh'],
+//     ['1_####.RGB_color.0012', 'YAG-10'],
+//     ['1_####.RGB_color.0013', 'YAG-12'],
+//     ['1_####.RGB_color.0014', 'YAG-1'],
+//     ['1_####.RGB_color.0015', 'YAG-2'],
+//     ['1_####.RGB_color.0016', 'YAG-6'],
+//     ['1_####.RGB_color.0017', 'YAG-A-Pose'],
+//     ['1_####.RGB_color.0018', 'YAG-B1'],
+//     ['1_####.RGB_color.0019', 'YAB-S1'],
+//     ['1_####.RGB_color.0020', 'YAB-14'],
+// ];
+
+// let namesW = [
+//     ['1_####.RGB_color.0000', 'EMA-0'],
+//     ['1_####.RGB_color.0001', 'W-A-FIT2'],
+//     ['1_####.RGB_color.0002', 'W-A-FIT'],
+//     ['1_####.RGB_color.0003', 'W-A-PoseNaturalGait'],
+//     ['1_####.RGB_color.0004', 'W-A-Pose'],
+//     ['1_####.RGB_color.0005', 'W-HP'],
+//     ['1_####.RGB_color.0006', 'W-KB'],
+//     ['1_####.RGB_color.0007', 'W-RO'],
+//     ['1_####.RGB_color.0008', 'W-Relaxed2'],
+//     ['1_####.RGB_color.0009', 'W-Relaxed'],
+//     ['1_####.RGB_color.0010', 'WA-1V2'],
+//     ['1_####.RGB_color.0011', 'WA-1'],
+//     ['1_####.RGB_color.0012', 'WA-2'],
+//     ['1_####.RGB_color.0013', 'WA-3_Heads_High'],
+//     ['1_####.RGB_color.0014', 'WA-4'],
+//     ['1_####.RGB_color.0015', 'WA-Relaxed'],
+//     ['1_####.RGB_color.0016', 'WAR-1'],
+//     ['1_####.RGB_color.0017', 'WAR-2-Mirrored'],
+//     ['1_####.RGB_color.0018', 'WAR-2'],
+//     ['1_####.RGB_color.0019', 'WAR-3'],
+//     ['1_####.RGB_color.0020', 'WB-1'],
+//     ['1_####.RGB_color.0021', 'WB-2'],
+//     ['1_####.RGB_color.0022', 'WC-1'],
+//     ['1_####.RGB_color.0023', 'WL-2-Mirrored'],
+//     ['1_####.RGB_color.0024', 'WL-2'],
+//     ['1_####.RGB_color.0025', 'WL-3'],
+//     ['1_####.RGB_color.0026', 'WL-4'],
+//     ['1_####.RGB_color.0027', 'WL-5'],
+//     ['1_####.RGB_color.0028', 'WPS-Jane-P2'],
+//     ['1_####.RGB_color.0029', 'WPS-Jane-P'],
+//     ['1_####.RGB_color.0030', 'WPS-Jane'],
+//     ['1_####.RGB_color.0031', 'WPS-Monica'],
+//     ['1_####.RGB_color.0032', 'WT-10'],
+//     ['1_####.RGB_color.0033', 'WT-1B'],
+//     ['1_####.RGB_color.0034', 'WT-2A'],
+//     ['1_####.RGB_color.0035', 'WT-2B'],
+//     ['1_####.RGB_color.0036', 'WT-3A'],
+//     ['1_####.RGB_color.0037', 'WT-5A'],
+//     ['1_####.RGB_color.0038', 'WT-6'],
+//     ['1_####.RGB_color.0039', 'WT-7'],
+//     ['1_####.RGB_color.0040', 'WT-9'],
+//     ['1_####.RGB_color.0041', 'WT-B5'],
+//     ['1_####.RGB_color.0042', 'WT-H'],
+//     ['1_####.RGB_color.0043', 'WT-Y01'],
+//     ['1_####.RGB_color.0044', 'WT-YogaCamel2']
+// ];
+
+// let namesM = [
+//     ['1_####.RGB_color.0000', 'AT-10'],
+//     ['1_####.RGB_color.0001', 'AT-11'],
+//     ['1_####.RGB_color.0002', 'AT-1'],
+//     ['1_####.RGB_color.0003', 'AT-4'],
+//     ['1_####.RGB_color.0004', 'AT-8'],
+//     ['1_####.RGB_color.0005', 'AT-9'],
+//     ['1_####.RGB_color.0006', 'BB-10'],
+//     ['1_####.RGB_color.0007', 'BB-11'],
+//     ['1_####.RGB_color.0008', 'BB-12'],
+//     ['1_####.RGB_color.0009', 'BB-4'],
+//     ['1_####.RGB_color.0010', 'BB-5'],
+//     ['1_####.RGB_color.0011', 'BB-6'],
+//     ['1_####.RGB_color.0012', 'BB-7'],
+//     ['1_####.RGB_color.0013', 'BB-9'],
+//     ['1_####.RGB_color.0014', 'BB-Crossover'],
+//     ['1_####.RGB_color.0015', 'BB-FlyingDunk'],
+//     ['1_####.RGB_color.0016', 'BB-JumpDefense'],
+//     ['1_####.RGB_color.0017', 'BB-Layup'],
+//     ['1_####.RGB_color.0018', 'BB-RunDribble'],
+//     ['1_####.RGB_color.0019', 'BB-Wheelchair'],
+//     ['1_####.RGB_color.0020', 'GF-1'],
+//     ['1_####.RGB_color.0021', 'GF-2'],
+//     ['1_####.RGB_color.0022', 'GF-3'],
+//     ['1_####.RGB_color.0023', 'GF-5'],
+//     ['1_####.RGB_color.0024', 'GF-6'],
+//     ['1_####.RGB_color.0025', 'GF-7'],
+//     ['1_####.RGB_color.0026', 'GF-Run'],
+//     ['1_####.RGB_color.0027', 'M-A-Pose'],
+//     ['1_####.RGB_color.0028', 'M-Relaxed'],
+//     ['1_####.RGB_color.0029', 'M-T-Pose'],
+//     ['1_####.RGB_color.0030', 'MA-1'],
+//     ['1_####.RGB_color.0031', 'MA-2V2'],
+//     ['1_####.RGB_color.0032', 'MA-2'],
+//     ['1_####.RGB_color.0033', 'MA-3'],
+//     ['1_####.RGB_color.0034', 'MA-4'],
+//     ['1_####.RGB_color.0035', 'MA-5'],
+//     ['1_####.RGB_color.0036', 'MAR-1-Mirrored'],
+//     ['1_####.RGB_color.0037', 'MAR-1'],
+//     ['1_####.RGB_color.0038', 'MAR-3'],
+//     ['1_####.RGB_color.0039', 'MB-1'],
+//     ['1_####.RGB_color.0040', 'MB-2-3rd'],
+//     ['1_####.RGB_color.0041', 'MB-2'],
+//     ['1_####.RGB_color.0042', 'MB-PRO-B1'],
+//     ['1_####.RGB_color.0043', 'MG-2'],
+//     ['1_####.RGB_color.0044', 'ML-1'],
+//     ['1_####.RGB_color.0045', 'ML-2'],
+//     ['1_####.RGB_color.0046', 'ML-5'],
+//     ['1_####.RGB_color.0047', 'MLS-0'],
+//     ['1_####.RGB_color.0048', 'MPS-Frank'],
+//     ['1_####.RGB_color.0049', 'MPS-MikeV2'],
+//     ['1_####.RGB_color.0050', 'MPS-Mike'],
+//     ['1_####.RGB_color.0051', 'MPS-R1'],
+//     ['1_####.RGB_color.0052', 'MT-Y01'],
+//     ['1_####.RGB_color.0053', 'MY-0'],
+//     ['1_####.RGB_color.0054', 'PRO-2'],
+//     ['1_####.RGB_color.0055', 'SBM-2'],
+//     ['1_####.RGB_color.0056', 'GF-LegUp'],
+//     ['1_####.RGB_color.0057', 'GF-P3'],
+//     ['1_####.RGB_color.0058', 'MA-P1'],
+//     ['1_####.RGB_color.0059', 'MF-ANK'],
+//     ['1_####.RGB_color.0060', 'MF-CRW'],
+//     ['1_####.RGB_color.0061', 'MF-OTC'],
+//     ['1_####.RGB_color.0062', 'MF-OTK'],
+//     ['1_####.RGB_color.0063', 'MRP-2'],
+//     ['1_####.RGB_color.0064', 'MS-1']
+// ];
+
+// renameFiles(path, path, namesM, extension);
